@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Orbitron',sans-serif;color:#fff;}
+body{background:#050910;padding:40px;}
+
+header{text-align:center;margin-bottom:35px;}
+header h1{font-size:34px;text-shadow:0 0 16px #00eaff;margin-bottom:6px;}
+header p{opacity:.8;}
+
+h2{text-shadow:0 0 12px #12ffe7;margin-bottom:15px;}
+
+.chart-section, .train-section{margin-bottom:50px;}
+canvas{background:rgba(255,255,255,.04);border:2px solid rgba(0,255,255,.3);border-radius:12px;box-shadow:0 0 18px rgba(0,255,255,.3);width:100%;}
+
+/* Training Section */
+.train-grid{
+    display:grid;
+    grid-template-columns:330px 1fr;
+    gap:30px;
+}
+
+.circle-box{text-align:center;}
+.circle{
+    width:200px;height:200px;
+    border-radius:50%;
+    background:conic-gradient(#00ffea 0deg,#00363a 0deg);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 0 25px #00eaff;
+    margin:auto;margin-bottom:10px;
+}
+.circle span{font-size:28px;text-shadow:0 0 12px cyan;}
+
+.line-box canvas{
+    height:280px;
+}

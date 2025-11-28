@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta-name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Threat Detection System</title>
+    <link rel="stylesheet" href="threat.css">
+</head>
+
+<body>
+
+    <!-- ── Page Title ─────────────────────────────── -->
+    <header>
+        <h1>Real-Time Threat Detection AI</h1>
+        <p>Live analysis — behavior mapping — risk classification</p>
+    </header>
+
+
+    <!-- ── Radar Scanner Section ───────────────────── -->
+    <section class="radar-box">
+        <div class="radar">
+            <div class="line"></div>
+            <div class="pulse"></div>
+        </div>
+        <div class="radar-label">Active Scan: Monitoring Entities</div>
+    </section>
+
+
+    <!-- ── Detected Threats List ───────────────────── -->
+    <section class="threat-list">
+        <h2>Detected Risks</h2>
+        <div id="targets"></div>
+    </section>
+
+
+    <!-- ── Threat Risk Breakdown ───────────────────── -->
+    <section class="analysis-panel">
+        <h2>Threat Analytics</h2>
+
+        <div class="metrics">
+
+            <div class="metric-card" id="riskScore">Risk Score: 0%</div>
+            <div class="metric-card" id="alertLevel">Level: SAFE</div>
+            <div class="metric-card" id="entityCount">Entities Tracked: 0</div>
+
+        </div>
+    </section>
+
+
+<script src="threat.js"></script>
+</body>
+</html>

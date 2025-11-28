@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Settings</title>
+    <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+
+<div class="settings-container">
+
+    <h1 class="title">⚙ System Control Panel</h1>
+    <p class="subtitle">Manage AI behaviour, response levels, notifications & logs</p>
+
+    <div class="settings-grid">
+
+        <!-- SECURITY CONFIGURATION -->
+        <div class="card">
+            <h2>Threat Response Level</h2>
+            <select id="responseLevel">
+                <option value="low">Low — Observe Only</option>
+                <option value="medium">Medium — Alert + Track</option>
+                <option value="high">High — Auto Neutralize Enabled</option>
+            </select>
+            <button class="apply-btn" onclick="saveSettings()">Save</button>
+        </div>
+
+        <!-- FACE MODEL SETTINGS -->
+        <div class="card">
+            <h2>Face Recognition Model</h2>
+            <input type="range" min="50" max="99" value="85" id="accuracySlider">
+            <label>Accuracy Threshold: <span id="accVal">85%</span></label>
+            <button class="apply-btn" onclick="saveSettings()">Update Model</button>
+        </div>
+
+        <!-- SYSTEM THEMES -->
+        <div class="card">
+            <h2>UI Theme</h2>
+            <select id="themeSelector">
+                <option value="dark">Dark Neon</option>
+                <option value="glass">Glassmorphic Frost</option>
+                <option value="matrix">Matrix Code Mode</option>
+            </select>
+            <button class="apply-btn" onclick="applyTheme()">Apply Theme</button>
+        </div>
+
+        <!-- DATA MANAGEMENT -->
+        <div class="card danger">
+            <h2>Data Logs Management</h2>
+            <button class="clear-btn" onclick="clearLogs()">Clear Logs</button>
+            <button class="export-btn" onclick="exportLogs()">Export Data</button>
+        </div>
+
+    </div>
+
+    <p class="footer">© 2025 AI Security Matrix OS | Dave</p>
+
+</div>
+
+<script src="settings.js"></script>
+</body>
+</html>

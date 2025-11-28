@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Early Crime Detector </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ─── Sidebar ─────────────────────────────── -->
+    <aside class="sidebar">
+        <h2>EARLY  CRIME DETECTOR</h2>
+        <ul>
+            <li class="active">Dashboard</li>
+           <a href="threat.html"> <li>Live Alerts</li></a>
+          <a href="live.html">  <li>Cameras</li></a>
+           <a href="analytics.html"> <li>Analysis</li></a>
+            <a href="settings.html"><li>Settings</li></a>
+        </ul>
+    </aside>
+
+    <!-- ─── Main Content ────────────────────────── -->
+    <main>
+
+        <!-- Header -->
+        <header class="topbar">
+            <h1>Real-Time Crime Detection</h1>
+            <button id="triggerAlert">Trigger Fake Alert</button>
+        </header>
+
+        <!-- Dashboard Cards -->
+        <section class="cards">
+           <a href="live.html"> <div class="card"> Live Monitoring</div></a>
+            <a href="threat.html"><div class="card">Threat Detection</div></a>
+            <div class="card"> Facial Recognition</div>
+            <a href="analytics.html"><div class="card"> Analytics</div></a>
+        </section>
+
+        <!-- Live feed container -->
+        <section class="live-feed">
+            <h2>Live Camera Feed</h2>
+            <div class="screen">No Signal</div>
+        </section>
+
+        <!-- Alerts Feed -->
+        <section class="alerts-container">
+            <h2 class="section-title"> Live Alerts Feed</h2>
+        
+            <div id="alertFeed" class="alert-feed"></div>
+        </section>
+        
+    </main>
+
+
+  
+
+    <script src="app.js"></script>
+</body>
+</html>

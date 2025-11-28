@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Analytics Dashboard</title>
+<link rel="stylesheet" href="analytics.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Security Analytics Dashboard</h1>
+    <p>Crime neutralization rate & AI model training performance</p>
+</header>
+
+<section class="chart-section">
+    <h2>Crimes Neutralized Over Time</h2>
+    <canvas id="crimeChart"></canvas>
+</section>
+
+<section class="train-section">
+    <h2>AI Training Analytics</h2>
+
+    <div class="train-grid">
+
+        <div class="circle-box">
+            <div id="circle" class="circle">
+                <span id="circleText">0%</span>
+            </div>
+            <p>Model Accuracy Growth</p>
+        </div>
+
+        <div class="line-box">
+            <canvas id="trainChart"></canvas>
+        </div>
+
+    </div>
+</section>
+
+<script src="analytics.js"></script>
+</body>
+</html>
